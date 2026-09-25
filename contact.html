@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewing Methods &amp; Contact — Pour &amp; Steep</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div>
+      <a href="index.html" class="logo">Pour &amp; Steep</a>
+      <p class="tagline">a small guide to slow coffee</p>
+    </div>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Brewing Methods &amp; Contact</h1>
+    <p>The table below compares pour-over with a few other popular methods.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <caption>Comparison of popular home coffee brewing methods</caption>
+        <thead>
+          <tr>
+            <th scope="col">Method</th>
+            <th scope="col">Grind Size</th>
+            <th scope="col">Brew Time</th>
+            <th scope="col">Typical Equipment Cost</th>
+            <th scope="col">Difficulty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Pour-Over (V60)</th>
+            <td>Medium-fine</td>
+            <td>2.5 – 4 min</td>
+            <td>$15 – $40</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <th scope="row">French Press</th>
+            <td>Coarse</td>
+            <td>4 min</td>
+            <td>$20 – $35</td>
+            <td>Easy</td>
+          </tr>
+          <tr>
+            <th scope="row">Espresso Machine</th>
+            <td>Fine</td>
+            <td>25 – 30 sec</td>
+            <td>$150 – $800+</td>
+            <td>Hard</td>
+          </tr>
+          <tr>
+            <th scope="row">AeroPress</th>
+            <td>Medium-fine</td>
+            <td>1.5 – 2 min</td>
+            <td colspan="2">$30 total, Easy–Medium</td>
+          </tr>
+          <tr>
+            <th scope="row">Cold Brew</th>
+            <td>Coarse</td>
+            <td>12 – 24 hrs</td>
+            <td>$10 – $25</td>
+            <td>Easy</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Prices are approximate and will vary by brand and region.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <h2>Get In Touch</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Your details</legend>
+
+        <div class="form-row">
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Jane Doe" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="13" max="110">
+        </div>
+
+        <div class="form-row">
+          <label for="visit-date">Preferred callback date</label>
+          <input type="date" id="visit-date" name="visit-date">
+        </div>
+
+        <div class="form-row">
+          <label for="favorite-color">Pick a color for your favorite mug</label>
+          <input type="color" id="favorite-color" name="favorite-color" value="#b25b34">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your message</legend>
+
+        <div class="form-row">
+          <span id="brew-method-label">Which method do you use most?</span>
+          <div class="radio-group"> 
+
+            <label><input type="radio" name="brew-method" value="pour-over" checked> Pour-over</label>
+            <label><input type="radio" name="brew-method" value="french-press"> French press</label>
+            <label><input type="radio" name="brew-method" value="espresso"> Espresso</label>
+            <label><input type="radio" name="brew-method" value="other"> Other</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <span id="topics-label">What would you like more content about?</span>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="topics" value="history"> History</label>
+            <label><input type="checkbox" name="topics" value="equipment"> Equipment</label>
+            <label><input type="checkbox" name="topics" value="recipes"> Recipes</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" maxlength="500" required></textarea>
+        </div>
+
+        <button type="submit">Send message</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Pour &amp; Steep — a student project for Assignment #1.</p>
+  </footer>
+
+</body>
+</html>
